@@ -3,8 +3,6 @@
 	Data: 27/04/2013
 	Autor: Elton Baroncello
 	Descrição: Leia um A vetor (10) de inteiros. Ordene, a seguir, os elementos de A em ordem crescente e escreva o vetor ordenado.
-
-	Falta testar
 	
 */
 #include <stdio.h>
