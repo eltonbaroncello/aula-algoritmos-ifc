@@ -24,7 +24,7 @@ int main(){
 	for(i=0; i<TAM; i++){
 		// move o indice maior para a direita
 		for (j = 0; j < TAM; ++j){
-			if(a[j]>=a[j-1]){
+			if(a[j]<=a[j-1]){
 				ax = a[j-1];
 				a[j-1] = a[j];
 				a[j] = ax;
