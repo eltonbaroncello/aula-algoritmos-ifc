@@ -12,7 +12,7 @@
 #define TAM 20
 
 int main(){
-	int i, n[TAM];
+	int i, n[TAM], pares[TAM], impares[TAM], ci=0, cp=0;
 	
 	for(i=0; i<TAM; i++){
 		printf("Digite um valor para N[%i]: ", i);
@@ -21,14 +21,20 @@ int main(){
 		
 	for(i=0; i<TAM; i++){
 		if(n[i]%2==0){
-			printf("Valor Par de N[%i] é: [%i]\n",i,n[i]);
+			pares[cp] = n[i]; cp++;
+		} else {
+			impares[ci] = n[i]; ci++;
 		}
 	}
 	
-	for(i=0; i<TAM; i++){
-		if(n[i]%2!=0){
-			printf("Valor Impar de N[%i] é: [%i]\n",i,n[i]);
-		}
+	// vetor impar
+	for(i=0; i<ci; i++){
+		printf("Valor Impar de impares[%i] é: [%i]\n",i,impares[i]);
+	}
+	
+	// vetor par
+	for(i=0; i<cp; i++){
+		printf("Valor Par de pares[%i] é: [%i]\n", i, pares[i]);
 	}
 		
 	return 0;
