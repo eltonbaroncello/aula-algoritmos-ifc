@@ -1,5 +1,5 @@
 /*
-	Exercício: 13
+	Exercício: 16
 	Data: 28/04/2013
 	Autor: Elton Baroncello
 	Descrição:	Leia um vetor (15) de inteiros. Subtitua a seguir, todos os valores negativos por 1 e escreva o vetor modificado.
