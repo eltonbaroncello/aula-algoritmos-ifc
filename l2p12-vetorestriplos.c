@@ -14,15 +14,16 @@
 #define TAM 50
 
 int main(){
-	int i, j=1, v[TAM];
+	int i, j=1;
+	long int v[TAM];
 
 	printf("\nDigite um valor para iniciar o vetor: ");
-	scanf("%d", &v[0]);
+	scanf("%ld", &v[0]);
 
-	printf("\n\nSérie do vetor com o valor triplo do anterior.\nVetor[0]=%d\n",v[0]);
+	printf("\n\nSérie do vetor com o valor triplo do anterior.\nVetor[0]=%ld\n",v[0]);
 	for(i=0; i<TAM-1; i++){
 		v[j] = v[i]*3;
-		printf("Vetor[%d]=%d\n", j, v[j]);
+		printf("Vetor[%d]=%ld\n", j, v[j]);
 		j++;
 	}
 	
