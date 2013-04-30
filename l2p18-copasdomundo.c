@@ -43,12 +43,12 @@ int main(){
 	}
 
 	// informar a quantidade de anos que já se passaram desde a conquista de cada título até hoje
-	for (i = 0; i < nConquistas; ++i){
+	for (i = 0; i < nConquistas; i++){
 		printf("se passaram %i anos De %i ate %i\n", (hoje - conquistas[i]), conquistas[i], hoje);
 	}
 
 	// informar a quantidade de anos entre um título e outro
-	for (i = 0; i < nConquistas-1; ++i){
+	for (i = 0; i < nConquistas-1; i++){
 		printf("%i anos de %i ate %i\n", (conquistas[i+1] - conquistas[i]), conquistas[i], conquistas[i+1]);	
 	}
 
