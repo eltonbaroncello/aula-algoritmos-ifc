@@ -11,7 +11,7 @@
 #define TAM 10
 
 int main(){
-	int i, j, a[TAM], ax;
+	int i, j, a[TAM], ax, troca;
 	
 	for(i=0; i<TAM; i++){
 		printf("\nDigite um valor para A[%i]: ", i);
@@ -19,13 +19,16 @@ int main(){
 	}
 	
 	// passa por cada indice [0=5,1=3,2=2,3=1,4=6,5=8,6=4,7=7,8=6,9=5]
-	for(i=0; i<TAM; i++){
+	troca=1;
+	while(troca){
+		troca=0;
 		// move o indice maior para a direita
 		for (j = 0; j < TAM-1; ++j){
 			if(a[j]>=a[j+1]){
 				ax = a[j+1];
 				a[j+1] = a[j];
 				a[j] = ax;
+				troca=1;
 			}
 		}
 	}
