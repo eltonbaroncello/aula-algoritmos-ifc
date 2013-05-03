@@ -22,14 +22,11 @@ int main(){
 		}
 	}
 
-	printf("Matriz\n");
-	for(i=0; i < L; i++){
-		printf("[\t");
-		for (j=0; j < C; j++){
-			printf("%i\t", m[i][j]);
-		}
-		printf("]\n");
+	printf("Matriz\n[\t");
+	for (j=0; j < C; j++){
+		printf("%i\t", m[1][j]);
 	}
+	printf("]\n");
 
 	return 0;
 }
