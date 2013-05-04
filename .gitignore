@@ -73,6 +73,11 @@ ipch/
 *.opensdf
 *.sdf
 
+# C builds
+*.exe
+*.bin
+
+
 # Visual Studio profiler
 *.psess
 *.vsp
