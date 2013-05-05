@@ -63,22 +63,22 @@ int main(){
 			}
 
 			// c. Soma dos elementos acima da diagonal principal;
-			if (j==i+1) {
+			if (j>i) {
 				cSoma = cSoma + m[i][j];
 			}
 
 			// d. Soma dos elementos abaixo da diagonal principal;
-			if (j==i-1) {
+			if (j<i) {
 				dSoma = dSoma + m[i][j];
 			}
 
 			// e. Soma dos elementos acima da diagonal secundária;
-			if (j==C-i-2) {
+			if (j<=C-i-2) {
 				eSoma = eSoma + m[i][j];
 			}
 
 			// f. Soma dos elementos abaixo da diagonal secundária;
-			if (j==C-i) {
+			if (j>=C-i) {
 				fSoma = fSoma + m[i][j];
 			}
 
